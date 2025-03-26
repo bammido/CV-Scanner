@@ -1,0 +1,12 @@
+{
+  "name": "cv-scanner",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx concurrently \"cd CV-Scanner-API && npm run start\" \"cd CV-Scanner-API && npm run preview\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+  cv_scanner_api:
+    build:
+      context: .
+      dockerfile: ./CV-Scanner-API/Dockerfile
+    container_name: cv_scanner_api
+    ports:
+      - '8080:8080'
+    volumes:
+      - ./:/app/CV-Scanner-API
+      - /app/CV-Scanner-API/node_modules
+    tty: true
+
+  cv_scanner_web:
+    build:
+      context: .
+      dockerfile: ./CV-Scanner-Web/Dockerfile
+    container_name: cv_scanner_web
+    ports:
+      - '80:80'
+      # - .:/usr/src/app/CV-Scanner-Web
+      # - /usr/src/app/CV-Scanner-Web/node_modules
