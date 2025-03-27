@@ -34,7 +34,7 @@ CV-Scanner é uma aplicação inovadora que analisa currículos e fornece sugest
 
 ```  docker compose up ```
 
-O projeto deve estar disponível em thhp://localhost:80
+O projeto deve estar disponível em http://localhost:80
 
 ## 🛠️ Features
 
